@@ -15,16 +15,15 @@ $(document).ready(function() {
       }
       if (hairpref === "brunette"){
         alert("george");
+
       }
 
-      // var quote = (100 - age) * 3;
-      // if (gender === 'male' && age < 26) {
-      //   quote += 50;
 
 
-      $("#celeb").empty().append(quote);
+
+      $("#winner").empty().append(quote);
       $("#quote").show();
-    } else {
+
 
     }
 
