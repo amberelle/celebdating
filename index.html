@@ -14,8 +14,6 @@
       <p>Tell us about you:</p>
 
       <form id="personalinfo">
-        <label for="age">Age</label>
-        <input id="age" type="text">
         <label for="gender">Gender</label>
         <select id="gender">
           <option value="female">Female</option>
@@ -32,11 +30,21 @@
           <option value="serious">serious</option>
         </select>
 
-        <button type="submit" class="btn">Who is my famous match?</button>
+        <button type="submit" id="submit" class="btn">Who is my famous match?</button>
       </form>
 
-      <div id="match">
-        <p>You will have to pay $<span id="rate"></span> per month to get car insurance. You should probably just bike or take the bus.</p>
+
+      <div id="female">
+        <div id="george">
+          <p> George Clooney </p>
+        </div>
+        <div id="chris">
+          <p> Chris Hemsworth </p>
+        </div>
+      </div>
+
+      <div id="quote">
+        <p>Your celebrity match is: <span id="celeb2"></span> Congratulations! You should stalk them till they fall in love.</p>
       </div>
     </div>
   </body>

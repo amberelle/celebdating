@@ -1,20 +1,33 @@
 $(document).ready(function() {
-  $("form#insurance").submit(function(event) {
-    var age = parseInt($("input#age").val());
-    var gender = $("select#gender").val();
+  $("#submit").click(function(event) {
 
-    if (age) {
-      var quote = (100 - age) * 3;
-      if (gender === 'male' && age < 26) {
-        quote += 50;
+    var gender = $("#gender").val();
+    var hairpref = $("#hairPref").val();
+    var humor = $("#humor").val();
+
+      event.preventDefault();
+
+    if (gender === "female") {
+      alert(gender);
+      $("#george").toggle();
+      if (hairpref === "blonde"){
+        alert("chris");
+      }
+      if (hairpref === "brunette"){
+        alert("george");
       }
 
-      $("#rate").empty().append(quote);
-      $("#match").show();
+      // var quote = (100 - age) * 3;
+      // if (gender === 'male' && age < 26) {
+      //   quote += 50;
+
+
+      $("#celeb").empty().append(quote);
+      $("#quote").show();
     } else {
-      alert('Please enter your age.');
+
     }
 
-    event.preventDefault();
+
   });
 });
