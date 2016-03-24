@@ -9,46 +9,49 @@
   </head>
   <body>
     <div class="container">
-      <h1>Celebrity Dating Site</h1>
+      <div class="jumbotron">
+        <h1>Celebrity Crush</h1>
+        <h3>Help us help you find your perfect celeb crush</h3>
+        <p>Tell us about you:</p>
+      </div>
 
-      <p>Tell us about you:</p>
+      <div class="row jumbotron">
+        <form id="personalinfo">
+          <label for="gender">Gender</label>
+          <select id="gender">
+            <option value="female">Female</option>
+            <option value="male">Male</option>
+          </select>
+      </div>
+      <div class="row jumbotron">
+          <label for="hairPref">Do you prefer blondes or brunettes</label>
+          <select id="hairPref">
+            <option value="blonde">blonde</option>
+            <option value="brunette">brunette</option>
+          </select>
+      </div>
+      <div class="row jumbotron">
+          <label for="humor">Do you prefer funny or serious</label>
+          <select id="humor">
+            <option value="funny">funny</option>
+            <option value="serious">serious</option>
+          </select>
+      </div>
 
-      <form id="personalinfo">
-        <label for="gender">Gender</label>
-        <select id="gender">
-          <option value="female">Female</option>
-          <option value="male">Male</option>
-        </select>
-        <label for="hairPref">Do you prefer blondes or brunettes</label>
-        <select id="hairPref">
-          <option value="blonde">blonde</option>
-          <option value="brunette">brunette</option>
-        </select>
-        <label for="humor">Do you prefer funny or serious</label>
-        <select id="humor">
-          <option value="funny">funny</option>
-          <option value="serious">serious</option>
-        </select>
 
         <button type="submit" id="submit" class="btn">Who is my famous match?</button>
       </form>
 
 
-      <div id="female">
-        <div id="george">
-          <p> George Clooney </p>
-        </div>
-        <div id="chris">
-          <p> Chris Hemsworth </p>
-        </div>
-      </div>
+
 
       <div id="quote">
+        <div class="row jumbotron">
         <p>Your celebrity match is: <span id="winner"></span></p>
+        <p>Congratulations! You should probably stalk them till they fall in love with you.</p>
+        <img src="img1/steve-buscemi-50-s_2240917a.jpg" id="img1"> 
+        </div>
       </div>
-
-        <!-- <p>Congratulations! You should stalk them till they fall in love.</p> -->
-
     </div>
   </body>
 </html>

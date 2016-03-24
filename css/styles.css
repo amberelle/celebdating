@@ -6,6 +6,10 @@
   display: none;
 }
 
-#george, #chris, #female {
+#george, #chris, #female,  {
+  display: none;
+}
+#img1 {
+  width: 40%;
   display: none;
 }

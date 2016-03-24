@@ -8,25 +8,46 @@ $(document).ready(function() {
       event.preventDefault();
 
     if (gender === "female") {
-      alert(gender);
-      $("#george").toggle();
-      if (hairpref === "blonde"){
-        alert("chris");
-      }
-      if (hairpref === "brunette"){
-        alert("george");
+      // $("#george").toggle();
+      if (hairpref === "blonde") {
+          if (humor === "funny"){
+            $("#winner").text("Steve Buscemi");
+            $("#img1").show();
+          }
+          if (humor === "serious")
+          $("#winner").text("Chris Hemsworth");
+          }
+      if (hairpref === "brunette") {
+        if (humor === "funny"){
+          $("#winner").text("Chris Prat");
+        }
+        if (humor === "serious")
+        $("#winner").text("Robert Patinson");
+        }
 
       }
+      if (gender === "male") {
+        // $("#george").toggle();
+        if (hairpref === "blonde") {
+            if (humor === "funny"){
+              $("#winner").text("Kristen Wigg");
+            }
+            if (humor === "serious")
+            $("#winner").text("Scarlet Johanssen");
+            }
+        if (hairpref === "brunette") {
+          if (humor === "funny"){
+            $("#winner").text("Olivia Munn");
+          }
+          if (humor === "serious")
+          $("#winner").text("Megan Fox");
+          }
+
+        }
 
 
 
-
-      $("#winner").empty().append(quote);
-      $("#quote").show();
-
-
-    }
-
+    $("#quote").show();
 
   });
 });
